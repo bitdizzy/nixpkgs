@@ -26813,6 +26813,10 @@ in
 
   wine = winePackages.full;
 
+  wine56 = winePackages.full.override {
+    wineRelease = "wine56";
+  };
+
   wine-staging = lowPrio (winePackages.full.override {
     wineRelease = "staging";
   });

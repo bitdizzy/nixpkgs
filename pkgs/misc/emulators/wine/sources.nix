@@ -65,4 +65,11 @@ in rec {
     repo = "winetricks";
     rev = version;
   };
+
+  wine56 = fetchurl rec {
+    version = "5.6";
+    url = "https://dl.winehq.org/wine/source/5.x/wine-${version}.tar.xz";
+    sha256 = "1rh0pk8mbi3bb0di13swzxn7nwnrbfsfizdv472vv3ymf5z8l6ah";
+    inherit (stable) mono gecko32 gecko64;
+  };
 }
