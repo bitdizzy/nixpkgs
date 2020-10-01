@@ -66,10 +66,10 @@ in rec {
     rev = version;
   };
 
-  wine56 = fetchurl rec {
-    version = "5.6";
+  wine55 = fetchurl rec {
+    version = "5.5";
     url = "https://dl.winehq.org/wine/source/5.x/wine-${version}.tar.xz";
-    sha256 = "1rh0pk8mbi3bb0di13swzxn7nwnrbfsfizdv472vv3ymf5z8l6ah";
+    sha256 = "1z7mvl6fgk7cg8vmy157r8azcz89srnckbzvsc6cva7a1fdi7qx0";
     inherit (stable) mono gecko32 gecko64;
   };
 }
